@@ -21,7 +21,23 @@ class ViewController: UIViewController
     {
         
     }
+    
+    
+    var rep : Int = 0
+    
+    @IBAction func toggleAutoLines(_ sender: UIButton)
+    {
+        
+        while(rep < 10)
+        {
+            autoLines()
+            rep += 1
+        }
+        
+        
+    }
+    
 
-
+    @IBOutlet var screenChange: UIView!
 }
 
