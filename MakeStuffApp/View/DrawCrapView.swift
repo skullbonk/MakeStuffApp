@@ -9,6 +9,13 @@
 import UIKit
 class DrawCrapView: UIView //-> Void
 {
+    public override func draw(_ rect: CGRect) -> Void
+    {
+       // createStickBoi().stroke()
+       // drawAFlippingTurtle
+        drawRandomMess().stroke()
+        
+    }
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -41,6 +48,49 @@ class DrawCrapView: UIView //-> Void
         figure.addLine(to: CGPoint(x: 220, y: 300))
         
         return figure
+    }
+    
+    private func drawAFlippingTurtle() -> Void
+    {
+        let logo = UIBezierPath()
+        UIColor.white.setFill()
+        logo.move(to: CGPoint(x: 50, y: 250))
+        logo.addLine(to: CGPoint(x: 100, y: 350))
+        logo.addLine(to: CGPoint(x: 50, y: 350))
+        logo.close()
+        logo.fill()
+    }
+    
+    var xx : Int = 0
+    var yy : Int = 0
+    
+   
+    
+    public func randomizeCoords() -> Void
+    {
+        xx = Int.random(in: 0 ... 300)
+        yy = Int.random(in: 0 ... 300)
+        //return xx; return yy
+    }
+    
+     var go : Int = 0
+    
+    private func drawRandomMess() -> UIBezierPath
+    {
+        let crap : UIBezierPath = UIBezierPath()
+        UIColor.brown.setStroke()
+        crap.lineWidth = 2.0
+        
+        while(go < 30)
+        {
+            randomizeCoords()
+            crap.move(to: CGPoint(x: xx, y: yy))
+            randomizeCoords()
+            crap.addLine(to: CGPoint(x: xx, y: yy))
+            go += 1
+        }
+
+    return crap
     }
    
 

@@ -18,13 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqK-S3-YzL" userLabel="autoLineToggle">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqK-S3-YzL" userLabel="autoLineToggle">
                                 <rect key="frame" x="126" y="587" width="123" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="toggle auto lines"/>
                                 <connections>
                                     <action selector="toggleAutoLines:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ll8-ma-wxV"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ai0-pV-4dx" customClass="DrawCrapView" customModule="MakeStuffApp" customModuleProvider="target">
+                                <rect key="frame" x="82" y="76" width="231" height="371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.64791850533095885" blue="0.67131934193533849" alpha="0.9187114877" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6c-FK-iGX" userLabel="screenChange">
                                 <rect key="frame" x="0.0" y="587" width="118" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -35,9 +41,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="AqK-S3-YzL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cvS-4c-ch9"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -55,17 +58,7 @@
                     <view key="view" contentMode="scaleToFill" id="Mn7-o5-wcv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ai0-pV-4dx">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" red="1" green="0.64791850533095885" blue="0.67131934193533849" alpha="0.9187114877" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ai0-pV-4dx" firstAttribute="centerX" secondItem="sWM-Mr-1We" secondAttribute="centerX" id="OI0-SP-qEj"/>
-                            <constraint firstItem="ai0-pV-4dx" firstAttribute="centerY" secondItem="sWM-Mr-1We" secondAttribute="centerY" id="QyB-u1-pcD"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sWM-Mr-1We"/>
                     </view>
                 </viewController>
