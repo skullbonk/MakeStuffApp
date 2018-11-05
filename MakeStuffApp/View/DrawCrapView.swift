@@ -7,25 +7,26 @@
 //
 
 import UIKit
-class DrawCrapView: UIView //-> Void
+public class DrawCrapView: UIView //-> Void
 {
     public override func draw(_ rect: CGRect) -> Void
     {
        // createStickBoi().stroke()
        // drawAFlippingTurtle
-        drawRandomMess().stroke()
+       drawRandomMess().stroke()
         
     }
 
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
+    override func draw(_ rect: CGRect)
+    {
         // Drawing code
     }
     */
     
-    private func createStickBoi() -> UIBezierPath
+    public func createStickBoi() -> UIBezierPath
     {
         let figure : UIBezierPath = UIBezierPath()
         
@@ -75,11 +76,16 @@ class DrawCrapView: UIView //-> Void
     
      var go : Int = 0
     
-    private func drawRandomMess() -> UIBezierPath
+    
+    
+    
+    public func drawRandomMess() -> UIBezierPath
     {
+        go = 0
         let crap : UIBezierPath = UIBezierPath()
         UIColor.brown.setStroke()
-        crap.lineWidth = 2.0
+        crap.lineWidth = 0.5
+        
         
         while(go < 30)
         {
@@ -92,6 +98,33 @@ class DrawCrapView: UIView //-> Void
 
     return crap
     }
+    
+
+    
+    
+    
+    
+/*
+ BACKUP drawRandomMess()
+ private func drawRandomMess() -> UIBezierPath
+ {
+ let crap : UIBezierPath = UIBezierPath()
+ UIColor.magenta.setStroke()
+ crap.lineWidth = 1.0
+ 
+ 
+ while(go < 30)
+ {
+ randomizeCoords()
+ crap.move(to: CGPoint(x: xx, y: yy))
+ randomizeCoords()
+ crap.addLine(to: CGPoint(x: xx, y: yy))
+ go += 1
+ }
+ 
+ return crap
+ }
+*/
    
 
 }

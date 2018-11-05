@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="toggle auto lines"/>
                                 <connections>
-                                    <action selector="toggleAutoLines:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ll8-ma-wxV"/>
+                                    <action selector="autoLineButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZH-5J-FWa"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ai0-pV-4dx" customClass="DrawCrapView" customModule="MakeStuffApp" customModuleProvider="target">
@@ -31,40 +31,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.64791850533095885" blue="0.67131934193533849" alpha="0.9187114877" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6c-FK-iGX" userLabel="screenChange">
-                                <rect key="frame" x="0.0" y="587" width="118" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="change screen"/>
-                                <connections>
-                                    <segue destination="52W-7F-qjO" kind="show" id="BXB-dz-WhK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="screenChange" destination="8bC-Xf-vdC" id="ZRP-N1-Lyn"/>
+                        <outlet property="autoLineOutlet" destination="AqK-S3-YzL" id="GBU-3d-vXg"/>
+                        <outlet property="drawCrap" destination="ai0-pV-4dx" id="Pz1-7H-FO0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="37.600000000000001" y="26.53673163418291"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="TLK-Zx-4gB">
-            <objects>
-                <viewController id="52W-7F-qjO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Mn7-o5-wcv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="sWM-Mr-1We"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pr4-dV-T1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="797.60000000000002" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>

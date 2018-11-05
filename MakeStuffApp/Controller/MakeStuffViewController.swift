@@ -11,33 +11,30 @@ import UIKit
 class ViewController: UIViewController
 {
 
+    @IBOutlet weak var drawCrap: DrawCrapView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
     
-    public func autoLines()
+    
+    @IBOutlet weak var autoLineOutlet: UIButton!
+    
+    @IBAction func autoLineButton(_ sender: UIButton)
     {
-        
+       // drawCrap.createStickBoi().stroke()
+        drawCrap.drawRandomMess()
     }
     
     
-    var rep : Int = 0
-    
-    @IBAction func toggleAutoLines(_ sender: UIButton)
-    {
-        
-        while(rep < 10)
-        {
-            autoLines()
-            rep += 1
-        }
-        
-        
-    }
-    
+   
 
-    @IBOutlet var screenChange: UIView!
+    
 }
+
 
