@@ -23,8 +23,6 @@ class ViewController: UIViewController
     }
     
     
-    @IBOutlet weak var autoLineOutlet: UIButton!
-    
     @IBAction func autoLineButton(_ sender: UIButton)
     {
        // drawCrap.createStickBoi().stroke()
