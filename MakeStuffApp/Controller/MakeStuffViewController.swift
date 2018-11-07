@@ -24,8 +24,7 @@ class ViewController: UIViewController
     
     
     
-
-    @IBAction func MakeLineButton(_ sender: UIButton)
+    @IBAction func makeLineButton(_ sender: UIButton)
     {
        // drawCrap.createStickBoi().stroke()
         drawCrap.drawRandomMess().stroke()

@@ -14,6 +14,7 @@
 		0F43FC11218B735C0041D5DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F43FC0F218B735C0041D5DF /* LaunchScreen.storyboard */; };
 		0F43FC1C218B7CDD0041D5DF /* DrawCrapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43FC1B218B7CDD0041D5DF /* DrawCrapView.swift */; };
 		0FBD6025219371D8007BAB18 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD6024219371D7007BAB18 /* ImagesViewController.swift */; };
+		0FBD60292193821D007BAB18 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD60282193821D007BAB18 /* ArtCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0F43FC12218B735C0041D5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F43FC1B218B7CDD0041D5DF /* DrawCrapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCrapView.swift; sourceTree = "<group>"; };
 		0FBD6024219371D7007BAB18 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		0FBD60282193821D007BAB18 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				0F43FC0A218B73550041D5DF /* Main.storyboard */,
 				0F43FC0F218B735C0041D5DF /* LaunchScreen.storyboard */,
 				0F43FC1B218B7CDD0041D5DF /* DrawCrapView.swift */,
+				0FBD60282193821D007BAB18 /* ArtCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				0F43FC09218B73550041D5DF /* MakeStuffViewController.swift in Sources */,
 				0F43FC1C218B7CDD0041D5DF /* DrawCrapView.swift in Sources */,
+				0FBD60292193821D007BAB18 /* ArtCell.swift in Sources */,
 				0FBD6025219371D8007BAB18 /* ImagesViewController.swift in Sources */,
 				0F43FC07218B73550041D5DF /* AppDelegate.swift in Sources */,
 			);

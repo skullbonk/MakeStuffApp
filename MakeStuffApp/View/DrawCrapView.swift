@@ -66,7 +66,7 @@ public class DrawCrapView: UIView //-> Void
     var yy : Int = 0
     
    
-    
+   /*
     public func randomizeCoords() -> Void
     {
         xx = Int.random(in: 0 ... 300)
@@ -74,24 +74,23 @@ public class DrawCrapView: UIView //-> Void
     }
     
      var go : Int = 0
-    
+    */
     
     
     
     public func drawRandomMess() -> UIBezierPath
-    {
+        {
       //  var go : Int = 0
         let crap : UIBezierPath = UIBezierPath()
         UIColor.red.setStroke()
         crap.lineWidth = 0.5
         
-        
         //while(go < 30)
         //{
-            randomizeCoords()
-            crap.move(to: CGPoint(x: xx, y: yy))
-            randomizeCoords()
-            crap.addLine(to: CGPoint(x: xx, y: yy))
+          //  randomizeCoords()
+            crap.move(to: CGPoint(x: Int.random(in: 0 ... 300), y: Int.random(in: 0 ... 300)))
+           // randomizeCoords()
+            crap.addLine(to: CGPoint(x: Int.random(in: 0 ... 300), y: Int.random(in: 0 ... 300)))
       //      go += 1
       //  }
 
