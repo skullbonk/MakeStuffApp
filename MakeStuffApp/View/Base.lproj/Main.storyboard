@@ -23,6 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="toggle auto lines"/>
                                 <connections>
+                                    <action selector="MakeLineButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BPv-Zs-fAX"/>
                                     <action selector="autoLineButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZH-5J-FWa"/>
                                 </connections>
                             </button>
@@ -34,16 +35,13 @@
                                     <segue destination="hzo-bC-h2R" kind="show" id="J2s-zy-WkR"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ai0-pV-4dx" customClass="DrawCrapView" customModule="MakeStuffApp" customModuleProvider="target">
-                                <rect key="frame" x="25" y="42" width="324" height="556"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ai0-pV-4dx" customClass="DrawCrapView" customModule="MakeStuffApp" customModuleProvider="target">
+                                <rect key="frame" x="75" y="136" width="224" height="394"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.64791850533095885" blue="0.67131934193533849" alpha="0.9187114877" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="ai0-pV-4dx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8v4-hL-zGA"/>
-                            <constraint firstItem="ai0-pV-4dx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pqG-7C-Zlt"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -70,7 +68,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wEq-4l-keR">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artidentifier" id="wEq-4l-keR">
                                 <rect key="frame" x="87.5" y="0.0" width="200" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

@@ -3,12 +3,13 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "Asset 1@2x.png",
+      "filename" : "diddle copy.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "diddle copy 2.png",
       "scale" : "3x"
     },
     {

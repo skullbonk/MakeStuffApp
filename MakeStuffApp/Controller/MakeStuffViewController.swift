@@ -23,10 +23,12 @@ class ViewController: UIViewController
     }
     
     
-    @IBAction func autoLineButton(_ sender: UIButton)
+    
+
+    @IBAction func MakeLineButton(_ sender: UIButton)
     {
        // drawCrap.createStickBoi().stroke()
-        drawCrap.drawRandomMess()
+        drawCrap.drawRandomMess().stroke()
     }
     
     
