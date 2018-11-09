@@ -9,6 +9,13 @@
 import UIKit
 public class DrawCrapView: UIView //-> Void
 {
+    public class CGContext
+    {
+       
+    }
+    
+    let context = CGContext()
+    
     public override func draw(_ rect: CGRect) -> Void
     {
        // createStickBoi().stroke()
@@ -66,7 +73,7 @@ public class DrawCrapView: UIView //-> Void
     var yy : Int = 0
     
    
-   /*
+   
     public func randomizeCoords() -> Void
     {
         xx = Int.random(in: 0 ... 300)
@@ -74,25 +81,29 @@ public class DrawCrapView: UIView //-> Void
     }
     
      var go : Int = 0
-    */
     
     
+ 
     
     public func drawRandomMess() -> UIBezierPath
         {
-      //  var go : Int = 0
-        let crap : UIBezierPath = UIBezierPath()
+         
+        let crap = UIBezierPath()
+        
+        var go : Int = 0
+       
         UIColor.red.setStroke()
         crap.lineWidth = 0.5
         
-        //while(go < 30)
-        //{
-          //  randomizeCoords()
-            crap.move(to: CGPoint(x: Int.random(in: 0 ... 300), y: Int.random(in: 0 ... 300)))
-           // randomizeCoords()
-            crap.addLine(to: CGPoint(x: Int.random(in: 0 ... 300), y: Int.random(in: 0 ... 300)))
-      //      go += 1
-      //  }
+        while(go < 5)
+        {
+            
+            randomizeCoords()
+            crap.move(to: CGPoint(x: xx, y: yy))
+            randomizeCoords()
+            crap.addLine(to: CGPoint(x: xx, y: yy))
+            go += 1
+        }
 
     return crap
     }

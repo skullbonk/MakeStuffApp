@@ -18,16 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqK-S3-YzL" userLabel="autoLineToggle">
-                                <rect key="frame" x="16" y="606" width="170" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="toggle auto lines"/>
-                                <connections>
-                                    <action selector="makeLineButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Haf-dK-xun"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6j-gV-1eu" userLabel="ChangeScreen">
-                                <rect key="frame" x="189" y="606" width="170" height="50"/>
+                                <rect key="frame" x="205" y="606" width="170" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change screen"/>
                                 <connections>
@@ -39,12 +31,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.64791850533095885" blue="0.67131934193533849" alpha="0.9187114877" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALN-9T-E6n">
+                                <rect key="frame" x="83" y="616" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="drawTheThingsIDunno:" destination="BYZ-38-t0r" eventType="valueChanged" id="hPt-yY-eeB"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="drawCrap" destination="ai0-pV-4dx" id="Pz1-7H-FO0"/>
+                        <outlet property="drawSwitch" destination="ALN-9T-E6n" id="JyY-Qw-awC"/>
+                        <outlet property="drawing" destination="ai0-pV-4dx" id="WJ5-7T-8nU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

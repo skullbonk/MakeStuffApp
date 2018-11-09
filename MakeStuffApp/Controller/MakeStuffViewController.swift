@@ -11,7 +11,10 @@ import UIKit
 class ViewController: UIViewController
 {
 
-    @IBOutlet weak var drawCrap: DrawCrapView!
+    @IBOutlet weak var drawing: DrawCrapView!
+    
+  
+    @IBOutlet weak var drawSwitch: UISwitch!
     
     override func viewDidLoad()
     {
@@ -23,13 +26,17 @@ class ViewController: UIViewController
     }
     
     
+
+  
     
-    @IBAction func makeLineButton(_ sender: UIButton)
-    {
-       // drawCrap.createStickBoi().stroke()
-        drawCrap.drawRandomMess().stroke()
+    @IBAction func drawTheThingsIDunno(_ sender: Any)
+        {
+            
+            if drawSwitch.isOn
+            {
+                drawing.drawRandomMess().stroke()
+            }
     }
-    
     
    
 
