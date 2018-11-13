@@ -9,21 +9,24 @@
 import UIKit
 public class DrawCrapView: UIView //-> Void
 {
-    public class CGContext
-    {
-       
-    }
-    
-    let context = CGContext()
-    
+    @IBOutlet weak var drawSwitch: UISwitch!
+
+   
     public override func draw(_ rect: CGRect) -> Void
     {
-       // createStickBoi().stroke()
-       // drawAFlippingTurtle
-       drawRandomMess().stroke()
-        
+        drawRandomMess()
+        // createStickBoi().stroke()
+        // drawAFlippingTurtle().stroke()
     }
+    
+ 
+ 
+    
+    
+    
+    
 
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -85,7 +88,7 @@ public class DrawCrapView: UIView //-> Void
     
  
     
-    public func drawRandomMess() -> UIBezierPath
+    public func drawRandomMess() -> Void
         {
          
         let crap = UIBezierPath()
@@ -104,11 +107,24 @@ public class DrawCrapView: UIView //-> Void
             crap.addLine(to: CGPoint(x: xx, y: yy))
             go += 1
         }
+            setNeedsDisplay()
 
-    return crap
+    crap.stroke()
+    }
+  
+    
+    /*
+    public func drawCGMess() -> CGContext
+    {
+        let mess : CGContext(origin: xx)
+        
+        randomizeCoords()
+        move(to: CGPoint(x: xx, y: yy))
+        
+        return mess
     }
     
-
+     */
     
     
     

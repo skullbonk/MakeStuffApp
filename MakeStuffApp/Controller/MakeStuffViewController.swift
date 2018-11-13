@@ -13,8 +13,8 @@ class ViewController: UIViewController
 
     @IBOutlet weak var drawing: DrawCrapView!
     
-  
-    @IBOutlet weak var drawSwitch: UISwitch!
+    @IBOutlet weak var mySwitch: UISwitch!
+    
     
     override func viewDidLoad()
     {
@@ -27,19 +27,14 @@ class ViewController: UIViewController
     
     
 
-  
-    
-    @IBAction func drawTheThingsIDunno(_ sender: Any)
-        {
-            
-            if drawSwitch.isOn
-            {
-                drawing.drawRandomMess().stroke()
-            }
-    }
-    
    
-
+    @IBAction func switchAction(_ sender: UISwitch)
+    {
+        if mySwitch.isOn
+        {
+            drawing.drawRandomMess()
+        }
+    }
     
 }
 

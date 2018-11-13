@@ -35,16 +35,21 @@
                                 <rect key="frame" x="83" y="616" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="drawTheThingsIDunno:" destination="BYZ-38-t0r" eventType="valueChanged" id="hPt-yY-eeB"/>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="0mQ-gG-uh8"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuV-U8-NfZ">
+                                <rect key="frame" x="164" y="568" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="drawSwitch" destination="ALN-9T-E6n" id="JyY-Qw-awC"/>
-                        <outlet property="drawing" destination="ai0-pV-4dx" id="WJ5-7T-8nU"/>
+                        <outlet property="drawing" destination="ai0-pV-4dx" id="xXb-qR-eex"/>
+                        <outlet property="mySwitch" destination="ALN-9T-E6n" id="0sv-22-utZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
